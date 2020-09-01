@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&family=Qwigley&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  font-family: "Qwigley", cursive;
+  background: #000;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quintessential", cursive;
+}
+
+.menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  z-index: 9;
+  font-size: 3rem;
+}
+
+.menu.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  background: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 1rem;
+  z-index: 10;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 5% 1fr 1fr 5%;
+      grid-template-columns: 5% 1fr 1fr 5%;
+}
+
+header .logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+header .hamburger {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .hamburger .bar-1 {
+  margin-bottom: 0.4rem;
+}
+
+header .hamburger.open .bar-1 {
+  -webkit-transform: rotate(120deg) translate(10px, -7px);
+          transform: rotate(120deg) translate(10px, -7px);
+}
+
+header .hamburger.open .bar-2 {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+main .container {
+  margin: 0 5%;
+  height: 100vh;
+  top: 50%;
+  -webkit-transform: translate(0%, 20%);
+          transform: translate(0%, 20%);
+}
+
+main .hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .hero p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+main .hero svg {
+  position: relative;
+  left: 50%;
+}
+
+main .hero h3 {
+  text-align: center;
+}
+
+main .contact h3 {
+  padding: 1rem 0;
+}
+
+main .contact #contact p,
+main .contact .location p {
+  font-size: 1.5rem;
+  font-family: "Quintessential", cursive;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  bottom: 100%;
+  font-size: 1.2rem;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  background: #1a1a1a;
+}
+/*# sourceMappingURL=style.css.map */
